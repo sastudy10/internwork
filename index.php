@@ -12,7 +12,6 @@
         .");";
   $stmt = $pdo->query($sql);
 
-// ログイン状態のチェック
   if (isset($_SESSION["account"])) {
     $account = $_SESSION['account'];
   }
@@ -48,7 +47,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>メインページ(仮)</title>
+    <title>メインページ</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"/>
     <link rel="stylesheet" type="text/css" href="mission_6-1_main.css"/>

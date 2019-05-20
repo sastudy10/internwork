@@ -82,8 +82,8 @@
 	 foreach($results as $row){
 		if($row['text'] != ""){
 		if($row['range'] == "1"){
-		$ytext = $row['text'];
-		echo "<div id='tt'>" . nl2br($ytext) ."</div>" ;
+		$text = $row['text'];
+		echo "<div id='tt'>" . nl2br($text) ."</div>" ;
         }}
 	 }
 	?>

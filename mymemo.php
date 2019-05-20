@@ -26,8 +26,8 @@ $account = $_SESSION['account'];
       if($row['text'] != ""){
       if($row['range'] == "0"){
       if($row['ac'] == $account ){
-            $ytext = $row['text'];
-            echo "<div id='tt'>" . nl2br($ytext) ."</div>" ;
+            $text = $row['text'];
+            echo "<div id='tt'>" . nl2br($text) ."</div>" ;
       }}}
     }
     ?>

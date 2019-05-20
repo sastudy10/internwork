@@ -29,8 +29,8 @@
     <?php if($account == ""): ?>
 	<header>
 	<ul>
-      <li class="link"><a href="#">会員登録</a></li>
-	  <li class="link"><a href="#">ログイン</a></li>
+      <li class="link"><a href="sign up.php">会員登録</a></li>
+	  <li class="link"><a href="log in.php">ログイン</a></li>
 	  <li>ゲストさん</li>
 	</ul>
 	</header>
@@ -38,7 +38,7 @@
 	<?php elseif($account != ""): ?>
 	<header>
 	<ul>
-      <li class="link"><a href="#">ログアウト</a></li>
+      <li class="link"><a href="log out.php">ログアウト</a></li>
       <?php echo "<li>" . htmlspecialchars($account,ENT_QUOTES)."さん</li>"; ?>
 	</ul>
 	</header>

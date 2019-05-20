@@ -31,7 +31,7 @@
 	<ul>
       <li class="link"><a href="send mail.php">会員登録</a></li>
 	  <li class="link"><a href="log in.php">ログイン</a></li>
-	  <li>ゲストさん</li>
+	  <h>ゲストさん</h>
 	</ul>
 	</header>
 	<aside>
@@ -42,7 +42,7 @@
 	<header>
 	<ul>
       <li class="link"><a href="log out.php">ログアウト</a></li>
-      <?php echo "<li>" . htmlspecialchars($account,ENT_QUOTES)."さん</li>"; ?>
+      <?php echo "<h>" . htmlspecialchars($account,ENT_QUOTES)."さん</h>"; ?>
 	</ul>
 	</header>
 	<aside>

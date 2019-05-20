@@ -29,11 +29,14 @@
     <?php if($account == ""): ?>
 	<header>
 	<ul>
-      <li class="link"><a href="sign up.php">会員登録</a></li>
+      <li class="link"><a href="send mail.php">会員登録</a></li>
 	  <li class="link"><a href="log in.php">ログイン</a></li>
 	  <li>ゲストさん</li>
 	</ul>
 	</header>
+	<aside>
+	<h1><a href="mymemo.php">あなたのメモ </a>a></h1>
+	<ul>
 
 	<?php elseif($account != ""): ?>
 	<header>
@@ -64,7 +67,7 @@
 	<div id="main">
 		<h2> 入力フォーム </h2>
 
-	 	<form action="post_check.php" method="post">
+	 	<form action="post check.php" method="post">
 		<textarea name="comment" cols="100" rows="10" required></textarea><br>
    		<input type="hidden" name ="account"  value=<?php echo $account ; ?> >
    		<input type="radio" name="range" value="mine"checked/>非公開
@@ -74,7 +77,7 @@
 	<?php endif; ?>
 		<h3>みんなのメモ</h3>
 	<?php
-	  $sql = 'SELECT*FROM main ORDER BY id';
+	  $sql = 'SELECT*FROM main ORDER BY id desc limit 50';
 	  $results = $pdo -> query($sql);
 	 foreach($results as $row){
 		if($row['text'] != ""){
@@ -83,7 +86,7 @@
 		echo "<div id='tt'>" . nl2br($ytext) ."</div>" ;
         }}
 	 }
-?>
+	?>
 
 	</div>
 

@@ -61,6 +61,8 @@ if(count($errors) === 0){
   <head>
     <title>投稿確認画面</title>
     <meta charset="utf-8">
+	<link rel="stylesheet" href="https...css"/>
+ 	<link rel="stylesheet" type="text/css" href="main.css"/>
   </head>
   <body>
   <?php if(count($errors) == 0): ?>

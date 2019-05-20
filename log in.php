@@ -1,6 +1,6 @@
 <?php
   session_start();
-  require_once("mission_6-1_db.php");
+  require_once("db.php");
   $sql = 'SELECT*FROM user ORDER BY id';
   $results = $pdo -> query($sql);
   foreach($results as $row){

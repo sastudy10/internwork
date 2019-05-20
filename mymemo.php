@@ -16,7 +16,8 @@ $account = $_SESSION['account'];
   <head>
 		<title>メインページ</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="./css/index.css">
+		<link rel="stylesheet" href="https...css"/>
+ 		<link rel="stylesheet" type="text/css" href="main.css"/>
 	</head>
 	<body>
     <?php
